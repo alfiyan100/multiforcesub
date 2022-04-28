@@ -1,0 +1,85 @@
+{
+  "name": "FILE TO LINK BOT",
+  "description": "Dapat merubah file menjadi link pada telegram bot https://t.me/chatjomblohalu_bot",
+  "keywords": [
+    "telegram",
+    "file",
+    "sharing"
+  ],
+  "repository": "https://github.com/CodeXBotz/File-Sharing-Bot",
+  "logo": "https://telegra.ph/file/60b186cac61f84c79f5ad.jpg",
+  "env": {
+    "TG_BOT_TOKEN": {
+      "description": "Masukkan token bot kamu, dari @Botfather",
+      "value": ""
+    },
+    "OWNER_ID": {
+      "description": "Masukkan ID Owner bot kamu",
+      "value": ""
+    },
+    "APP_ID":{
+      "description": "Masukkan APP_ID, Dapatkan dari my.telegram.org",
+      "value": ""
+    },
+    "API_HASH":{
+      "description": "Masukkan API_HASH, Dapatkan dari my.telegram.org",
+      "value": ""
+    },
+    "CHANNEL_ID":{
+      "description": "Ini adalah (database channel), Tambahkan bot di channel database lalu jadikan admin, dan masukkan ID channel",
+      "value": "-100"
+    },
+    "FORCE_SUB_CHANNEL":{
+      "description": "Masukkan ID channel atau grup, jika Anda ingin User mensub Channel / Grup (INI SUBS CH 1)",
+      "value": ""
+    },
+    "FORCE_SUB_CHANNEL2":{
+      "description": "Masukkan ID channel atau grup, jika Anda ingin User mensub Channel / Grup (INI SUBS CH 2)",
+      "value": ""
+    },
+    "FORCE_SUB_CHANNEL3":{
+      "description": "Masukkan ID channel atau grup, jika Anda ingin User mensub Channel / Grup (INI SUBS CH 3)",
+      "value": ""
+    },
+    "FORCE_SUB_CHANNEL4":{
+      "description": "Masukkan ID channel atau grup, jika Anda ingin User mensub Channel / Grup (INI SUBS CH 4)",
+      "value": ""
+    },
+    "START_MESSAGE": {
+      "description": "Pesan Start bot",
+      "value": "Hello {first}\n\nSaya dapat memberikan kamu file dalam bentuk link"
+    },
+    "FORCE_SUB_MESSAGE": {
+      "description": "Pesan Untuk Users Yang belum Subs",
+      "value": "<b>🔰 Akses ditolak, kamu belum bergabung .</b>"
+    },
+    "ADMINS": {
+      "description": "Masukkan ID admin sama dengan owner",
+      "value": "1775279481"
+    },
+    "PROTECT_CONTENT": {
+      "description": "Protect contents True untuk menyalakan dan False untuk menonaktifkan",
+      "value": "True"
+    }
+  },
+  "addons": [
+    {
+    "plan": "heroku-postgresql",
+      "options": {
+        "version": "12"
+      }
+    }
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
+  ],
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "free"
+    }
+  }
+}
+
