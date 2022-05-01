@@ -71,7 +71,8 @@ async def start_command(client: Client, message: Message):
                 caption = CUSTOM_CAPTION.format(previouscaption = "" if not msg.caption else msg.caption.html, filename = msg.document.file_name)
             else:
                 caption = "" if not msg.caption else msg.caption.html
-            reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton("🔁 Bagikan Konten ini", url=f'https://telegram.me/share/url?url=https://t.me/testsigumrobot?start={base64_string}')]])
+            user = await client.get_me()
+            reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton("🔁 Bagikan Konten ini", url=f'https://telegram.me/share/url?url=https://t.me/{user.username}?start={base64_string}')]])
             try:
                 await msg.copy(chat_id=message.from_user.id, caption = caption, parse_mode = 'html', reply_markup = reply_markup, protect_content=PROTECT_CONTENT)
                 await asyncio.sleep(0.5)
