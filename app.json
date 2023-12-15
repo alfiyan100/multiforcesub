@@ -61,14 +61,6 @@
       "description": "Protect contents True untuk menyalakan dan False untuk menonaktifkan",
       "value": "True"
     }
-  },
-  "addons": [
-    {
-    "plan": "heroku-postgresql",
-      "options": {
-        "version": "12"
-      }
-    }
   ],
   "buildpacks": [
     {
