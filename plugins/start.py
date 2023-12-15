@@ -127,7 +127,7 @@ async def not_joined(client: Client, message: Message):
     else:
         username = user.username
     buttons = [
-        [   InlineKeyboardButton("🥷 ᴘᴇᴍɪʟɪᴋ", url = f"https://t.me/{username}")],
+        [   InlineKeyboardButton("🥷 ᴘᴇᴍɪʟɪᴋ", url = f"https://t.me/redzonecs_bot")],
         [
             InlineKeyboardButton("🆔 ᴄʜᴀɴɴᴇʟ 1",url = client.invitelink),
             InlineKeyboardButton("🆔 ᴄʜᴀɴɴᴇʟ 2",url = client.invitelink2)
