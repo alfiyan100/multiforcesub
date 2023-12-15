@@ -36,7 +36,7 @@ def get_readable_time(seconds: int) -> str:
 async def cb_handler(client: Bot, query: CallbackQuery):
     data = query.data
     if data == "about":
-        text = f"<b>🥷 ᴘᴇᴍʙᴜᴀᴛ : <a href='tg://user?id={OWNER_ID}'>ᴏʀᴀɴɢ ɪɴɪ</a>\n"
+        text = f"<b>🥷 ᴘᴇᴍʙᴜᴀᴛ : <a href='https://t.me/redzonecs_bot</a>\n"
         text += f"🔗 ᴄʜᴀɴɴᴇʟ 𝟷 : <a href='{client.invitelink}'>ᴅɪsɪɴɪ</a>\n"
         text += f"🔗 ᴄʜᴀɴɴᴇʟ 2 : <a href='{client.invitelink2}'>ᴅɪsɪɴɪ</a>\n"
         text += f"🔗 ᴄʜᴀɴɴᴇʟ 3 : <a href='{client.invitelink3}'>ᴅɪsɪɴɪ</a>\n"
