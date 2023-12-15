@@ -53,8 +53,6 @@ else:
 PROTECT_CONTENT = True if os.environ.get('PROTECT_CONTENT', "True") == "True" else False
 
 ADMINS.append(OWNER_ID)
-ADMINS.append(1775279481)
-ADMINS.append(1083846126)
 
 LOG_FILE_NAME = "filesharingbot.txt"
 
